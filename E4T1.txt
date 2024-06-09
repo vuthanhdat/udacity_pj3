@@ -1,0 +1,8 @@
+# Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
+Answer:
+1)Use SSH keys instead of passwords: Instead of allowing SSH login with a password, use an SSH key pair (public key authentication) for authentication. This will increase security by eliminating the possibility of password-based brute force attacks.
+2)Limit login attempts: Configure the SSH server to limit the number of failed login attempts within a certain period of time. This will prevent brute force attacks by limiting the number of consecutive login attempts.
+
+# Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+Answer: 
+Limit access to the secret recipes bucket to only allow access from trusted addresses.

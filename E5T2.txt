@@ -1,0 +1,20 @@
+# Identify tools that will allow you to do the following:
+Answer:
+## Scan infrastructure as code templates
+1)AWS CloudFormation Guard
+2)Terraform Compliance
+### Example vulnerability
+Not using the correct specified AMI 
+
+##Scan AMI’s or containers for OS vulnerabilities
+1)Trivy
+2)Clair
+3)OpenSCAP
+### Example vulnerability
+Scan Docker images or AMIs to determine if they contain software packages with known security vulnerabilities
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+1)AWS Config
+2)AWS Security Hub
+### Example vulnerability
+S3 buckets must be configured according to the defined security rules

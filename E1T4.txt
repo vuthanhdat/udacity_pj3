@@ -1,0 +1,6 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+Answer:
+# Poor practice 1
+WebAppSG is allowing traffic from the entire internet. Needs to be revised to only receive traffic from load balance.
+# Poor practice 2
+Currently, to go through the internet to access S3, you should use an endpoint. On the S3 side, there is no policy to block requests from unknown sources.
